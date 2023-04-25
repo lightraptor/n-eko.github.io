@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-eko</title>
+    <!-- file css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="jquery-3.6.0.js"></script>
+    <link rel="shortcut icon" href="./img/icons8-nfc-n-48.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation bar -->
+
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="#">N-eko</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">N-eko</a></span>
+                    <i class='bx bx-x sidebarClose' ></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#" onclick="unknown()" >About</a></li>
+                    <li><a href="#" onclick="unknown()" >Member</a></li>
+                    <li><a href="#" onclick="unknown()" >Project</a></li>
+                    <li><a href="#" onclick="unknown()" >Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <!-- <div class="dark-light">
+                    <i class='bx bx-sun sun' ></i>
+                    <i class='bx bx-moon moon' ></i>
+                </div> -->
+            </div>
+
+        </div>
+    </nav>
+<!-- end navigation bar -->
+<!-- home session -->
+<div class="home-session" id="home">
+    <h1 style="font-family: 'IBM Plex Serif', serif;" >N<a style="color: var(--point-thinkpad);">-</a>eko</h1>
+</div>
+<!-- end home session  -->
+<!-- loading effect -->
+<div class="loading-wrapper">
+    <div class="loading">
+
+    </div>
+</div>
+<!-- end loading effect -->
+
+<!-- link file js -->
+    <script src="index.js"></script>
+    <script>
+        $(window).on("load",function(){
+        $(".loading-wrapper").fadeOut("slow");
+    });
+    </script>
+</body>
+</html>
